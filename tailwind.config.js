@@ -2,7 +2,11 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        'custom-size': '1.7rem',
+      },
+    },
   },
   plugins: [],
 }

@@ -1,3 +1,154 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap');
+  
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+  background:linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+}
+
+h1 {
+  background: #2b3b79;
+ 
+}
+
+
+
+.weather-input button {
+ 
+  background: #5372F0;
+ 
+}
+
+
+
+
+.weather-input .search-btn:hover {
+  background: #2c52ed;
+}
+
+.weather-input .location-btn {
+  background: #4b6276;
+}
+
+.weather-input .location-btn:hover {
+  background: #5c636a;
+}
+
+
+
+
+
+.weather-data .current-weather {
+  
+  background: #1f2d62;
+
+}
+
+
+.current-weather h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+
+
+
+.current-weather .icon {
+  text-align: center;
+}
+
+.current-weather .icon img {
+  max-width: 120px;
+  margin-top: -15px;
+}
+.current-weather .icon h6 {
+  margin-top: -10px;
+  text-transform: capitalize;
+}
+
+
+.recent-cities-dropdown {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid black;
+  background-color:#5372F0 ;
+  border-radius: 4px;
+  margin-top: 10px;
+  
+}
+
+
+
+.weather-cards .card {
+  color: #fff;
+  padding: 18px 16px;
+
+  background: rgb(23, 145, 102);
+  
+}
+
+
+
+.weather-cards .card img {
+  max-width: 70px;
+  margin: 5px 0 -12px 0;
+}
+
+
+/* grid media on weather */
+
+@media (max-width: 1400px) {
+  .weather-data .current-weather {
+    padding: 20px;
+  }
+  .weather-cards {
+    flex-wrap: wrap;
+  }
+  .weather-cards .card {
+    width: calc(100% / 4 - 15px);
+  }
+}
+@media (max-width: 1200px) {
+  .weather-cards .card {
+    width: calc(100% / 3 - 15px);
+  }
+}
+@media (max-width: 950px) {
+  .weather-input {
+    width: 450px;
+  }
+  .weather-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 750px) {
+  h1 {
+    font-size: 1.45rem;
+    padding: 16px 0;
+  }
+  .container {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .weather-input {
+    width: 100%;
+  }
+  .weather-data h2 {
+    font-size: 1.35rem;
+  }
+}
